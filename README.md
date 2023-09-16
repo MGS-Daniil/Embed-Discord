@@ -1,3 +1,4 @@
-# Embed-Discord
+# Embed Discord generator (No)
 with GitHub pages
-### https://mgs-daniil.github.io/Embed-Discord/
+
+**test it with this [site](https://mgs-daniil.github.io/Embed-Discord/)**
