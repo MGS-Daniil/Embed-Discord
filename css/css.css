@@ -5,15 +5,33 @@
     margin: 10px;
 }
 
-text {
+.text {
     color: #472d2d;
     text-align: left;
     font-size: 20px;
     margin: 10px;
 }
 
-centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.panelContainer {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid rgb(96, 86, 86);
+    background-color: #9c94e0;
+    text-align: center;
+}
+
+.button {
+    background-color: #ffde96;  
+    color: #472d2d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+selector {
+    background-color: #fffcd0;
 }
