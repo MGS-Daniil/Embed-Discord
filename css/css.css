@@ -5,9 +5,15 @@
     margin: 10px;
 }
 
-.text {
+text {
     color: #472d2d;
     text-align: left;
     font-size: 20px;
     margin: 10px;
+}
+
+centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
 }
