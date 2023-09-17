@@ -2,17 +2,17 @@
 # Site settings
 # ---------------------------------------
 
-title: Embed Generator
-first_name: Daniil10295
-email: chernyak.daniil.2010@gmail.com
+title: "Embed Generator"
+first_name: "Daniil10295"
+email: "chernyak.daniil.2010@gmail.com"
 author-url: https://github.com/MGS-Daniil
 description: Создай [свою](https://github.com/MGS-Daniil/Embed-Discord) ссылку с эмбедом
 repository: https://github.com/MGS-Daniil/Embed-Discord
 lang: ru
 icon: ✏️
 
-url: https://mgs-daniil.github.io/Embed-Discord/
-baseurl: /Embed-Discord
+url: "https://mgs-daniil.github.io/Embed-Discord/"
+baseurl: "/Embed-Discord"
 lastupdated: true
 impressum_path: templates
 
@@ -45,9 +45,83 @@ og_img: https://vsekidki.ru/uploads/posts/2016-07/1469367149_perspective-dice-si
 # Analytics and search engine verification
 # ---------------------------------------
 google_analytics: G-E31L9P86XR
-google_verification: 
+google_verification: yX1mjJ24IGNKkcP0iQ74lDbye8Hn25-AmexI2sLTDtU
 
+# ---------------------------------------
+# Collection
+# ---------------------------------------
+collections:
+    projects:
+        output: true
+        permalink: /projects/:path/
 
+announcements:
+    enabled: true
+    scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+    limit: 5 # leave blank to include all the news in the `_news` folder
+    
+# ---------------------------------------
+# Jekyll settings
+# ---------------------------------------
+markdown: kramdown
+highlighter: rouge
+kramdown:
+    input: GFM
+    syntax_highlighter_opts:
+        css_class: 'highlight'
+        span:
+            line_numbers: false
+        block:
+            line_numbers: false
+            start_line: 1
+
+# Includes & excludes
+include: ['_pages']
+keep_files:
+    - .git
+
+# Plug-ins
 plugins:
-    - "jekyll-relative-links"
-    - "jekyll-metadata"
+    - jekyll-archives
+    - jekyll-diagrams
+    - jekyll-email-protect
+    - jekyll-feed
+    - jekyll-get-json
+    - jekyll-imagemagick
+    - jekyll-jupyter-notebook
+    - jekyll-link-attributes
+    - jekyll-minifier
+    - jekyll-paginate-v2
+    - jekyll/scholar
+    - jekyll-sitemap
+    - jekyll-toc
+    - jekyll-twitter-plugin
+    - jemoji
+
+# Sitemap settings
+defaults:
+    - scope:
+          path: "assets"
+      values:
+          sitemap: false
+          
+# ---------------------------------------
+# Jekyll Minifier
+# ---------------------------------------
+
+jekyll-minifier:
+    exclude: ['robots.txt']
+    uglifier_args:
+        harmony: true
+        
+# ---------------------------------------
+# Optional Features
+# ---------------------------------------
+
+enable_google_analytics: true  # enables google analytics
+enable_cronitor_analytics: false  # enables cronitor RUM analytics
+enable_google_verification: true  # enables google site verification
+enable_tooltips:            false  # enables automatic tooltip links generated
+# for each section titles on pages and posts
+enable_darkmode:            true   # enables switching between light/dark modes
+enable_progressbar:         true   # enables a horizontal progress bar linked to the vertical scroll position
