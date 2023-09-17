@@ -18,6 +18,15 @@
     <title>Основная страница - {{ site.title }}</title>
 </head>
 <body>
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E31L9P86XR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-E31L9P86XR');
+    </script>
     <div class="panelContainer">
         <h1>Embed Generator</h1>
         <p class="text;panelContainer">Генератор embed ссылок</p>
