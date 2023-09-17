@@ -1,13 +1,52 @@
-﻿
+﻿# ---------------------------------------
+# Site settings
+# ---------------------------------------
+
 title: Embed Generator
-author-name: Daniil10295
-author-url: https://github.com/MGS-Daniil
+first_name: Daniil10295
 email: chernyak.daniil.2010@gmail.com
-description: Создай свою ссылку с эмбедом
-url: https://mgs-daniil.github.io/Embed-Discord/
-domain: mgs-daniil.github.io
+author-url: https://github.com/MGS-Daniil
+description: Создай [свою](https://github.com/MGS-Daniil/Embed-Discord) ссылку с эмбедом
 repository: https://github.com/MGS-Daniil/Embed-Discord
-language: ru
+lang: ru
+icon: ✏️
+
+url: https://mgs-daniil.github.io/Embed-Discord/
+baseurl: /Embed-Discord
+lastupdated: true
+impressum_path: templates
+
+# ---------------------------------------
+# Theme
+# ---------------------------------------
+
+highlight_theme_light: github
+highlight_theme_dark: native
+
+#repo color theme
+repo_theme_light: defualt
+repo_theme_dark: dark
+repo_trophies:
+    enabled: true
+    theme_light: flat
+    theme_dark: gitdimmed
+
+# ---------------------------------------
+# RSS Fields
+# ---------------------------------------
+rss_icon: true
+
+# ---------------------------------------
+# Open Graph
+# ---------------------------------------
+og_img: https://vsekidki.ru/uploads/posts/2016-07/1469367149_perspective-dice-six-faces-random.png"
+
+# ---------------------------------------
+# Analytics and search engine verification
+# ---------------------------------------
+google_analytics: G-E31L9P86XR
+google_verification: 
+
 
 plugins:
     - "jekyll-relative-links"
